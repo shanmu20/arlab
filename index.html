@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello, World! - A-Frame</title>
+    <meta name="description" content="Hello, World! - A-Frame">
+    <script src="js/aframe.min.js"></script>
+  </head>
+  <body>
+    <!--<a-scene>
+      <a-assets>
+        <a-asset-item id="tree" src="models/spider/Only_Spider_with_Animations_Export.glb"></a-asset-item>
+      </a-assets>
+      <a-entity gltf-model="#tree" scale="0.01 0.01 0.01" position="-   0 0 -10"></a-entity>
+    </a-scene> -->
+    <a-scene>
+      <a-assets>
+        <video id="penguin-sledding" autoplay loop="false" src="test.mp4"></video>
+      </a-assets>
+      <!-- Using the asset management system. -->
+      <a-video src="#penguin-sledding" transparent="true" width="16" height="9" position="0 0 -20"></a-video>
+
+        <a-sky color="#ECECEC"></a-sky>
+    </a-scene>      
+      
+
+    <!--<a-scene>
+      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene> -->
+  </body>
+</html>
