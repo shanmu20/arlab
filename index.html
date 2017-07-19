@@ -17,15 +17,19 @@
       </a-assets>
       <a-entity gltf-model="#tree" scale="0.01 0.01 0.01" position="-   0 0 -10"></a-entity>
     </a-scene> -->
-    <a-scene>
+      <a-scene embedded arjs='sourceType: webcam;'>
+		<a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
+		<a-marker-camera preset='hiro'></a-marker-camera>
+	</a-scene>
+      
+    <!--<a-scene>
       <a-assets>
         <video id="penguin-sledding" autoplay loop="false" src="test.mp4"></video>
       </a-assets>
-      <!-- Using the asset management system. -->
       <a-video src="#penguin-sledding" transparent="true" width="16" height="9" position="0 0 -20"></a-video>
 
         <a-sky color="#ECECEC"></a-sky>
-    </a-scene>      
+    </a-scene> -->     
       
 <!-- AR.js by @jerome_etienne - github: https://github.com/jeromeetienne/ar.js - info: https://medium.com/arjs/augmented-reality-in-10-lines-of-html-4e193ea9fdbf -->
 	<a-scene embedded arjs='sourceType: webcam;'>
