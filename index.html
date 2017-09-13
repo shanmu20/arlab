@@ -5,14 +5,12 @@
 <script>THREEx.ArToolkitContext.baseURL = 'https://rawgit.com/jeromeetienne/ar.js/master/three.js/'</script>
 <body style='margin : 0px; overflow: hidden;'>
 	<a-scene embedded artoolkit='sourceType: webcam;'>
-	         <a-assets>
+	   <a-assets>
         <a-asset-item id="tree" src="models/spider/Only_Spider_with_Animations_Export.glb"></a-asset-item>
       </a-assets>
-      <a-marker preset='hiro'>
         <a-entity gltf-model="#tree" position='0 0.5 0'></a-entity>
-    </a-marker>
-
-        
+		<a-marker-camera preset='hiro'></a-marker-camera>
+      
 	</a-scene>
 </body> 
   </body>
