@@ -2741,7 +2741,11 @@ AFRAME.registerComponent('arjsmarker', {
 		}else if(this.data.preset === 'aeroplane'){
 			this.data.type = 'pattern'
 			this.data.patternUrl = 'https://raw.githubusercontent.com/shanmu20/arlab/master/pattern/new_aeroplane.patt'
-		}else {
+		}else if(this.data.preset === 'circuit'){
+			this.data.type = 'pattern'
+			this.data.patternUrl = 'https://raw.githubusercontent.com/shanmu20/arlab/master/pattern/circuit.patt'
+		}
+		else {
 			console.assert( this.data.preset === '', 'illegal preset value '+this.data.preset)
 		}
 
