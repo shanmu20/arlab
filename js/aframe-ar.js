@@ -2741,9 +2741,9 @@ AFRAME.registerComponent('arjsmarker', {
 		}else if(this.data.preset === 'tiger'){
 			this.data.type = 'pattern'
 			this.data.patternUrl = 'https://raw.githubusercontent.com/shanmu20/arlab/master/pattern/tiger.patt'
-		}else if(this.data.preset === 'circuit'){
+		}else if(this.data.preset === 'earth'){
 			this.data.type = 'pattern'
-			this.data.patternUrl = 'https://raw.githubusercontent.com/shanmu20/arlab/master/pattern/circuit.patt'
+			this.data.patternUrl = 'https://raw.githubusercontent.com/shanmu20/arlab/master/pattern/earth.patt'
 		}
 		else {
 			console.assert( this.data.preset === '', 'illegal preset value '+this.data.preset)
