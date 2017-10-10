@@ -2735,6 +2735,9 @@ AFRAME.registerComponent('arjsmarker', {
 		}else if( this.data.preset === 'area' ){
 			this.data.type = 'area'
 			// fall through
+		}else if(this.data.preset === 'ar'){
+			this.data.type = 'pattern'
+			this.data.patternUrl = 'https://github.com/shanmu20/arlab/blob/master/pattern/ar.patt'
 		}else {
 			console.assert( this.data.preset === '', 'illegal preset value '+this.data.preset)
 		}
