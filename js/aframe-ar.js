@@ -2738,9 +2738,9 @@ AFRAME.registerComponent('arjsmarker', {
 		}else if(this.data.preset === 'ar'){
 			this.data.type = 'pattern'
 			this.data.patternUrl = 'https://raw.githubusercontent.com/shanmu20/arlab/master/pattern/ar.patt'
-		}else if(this.data.preset === 'aeroplane'){
+		}else if(this.data.preset === 'tiger'){
 			this.data.type = 'pattern'
-			this.data.patternUrl = 'https://raw.githubusercontent.com/shanmu20/arlab/master/pattern/new_aeroplane.patt'
+			this.data.patternUrl = 'https://raw.githubusercontent.com/shanmu20/arlab/master/pattern/tiger.patt'
 		}else if(this.data.preset === 'circuit'){
 			this.data.type = 'pattern'
 			this.data.patternUrl = 'https://raw.githubusercontent.com/shanmu20/arlab/master/pattern/circuit.patt'
