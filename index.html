@@ -11,7 +11,6 @@
         <a-assets>
           <a-asset-item id="areoplane" src="models/CesiumAir/Cesium_Air.gltf"></a-asset-item>
           <a-asset-item id="walking" src="models/walking/Cesium_Man.gltf"></a-asset-item>
-          <a-asset-item id="skeleton" src="models/skeleton/skeleton.obj"></a-asset-item>
         </a-assets>
         <!-- use your gltf model -->	
 
@@ -31,7 +30,7 @@
 		
 		<!-- handle ar marker -->
 		<a-marker preset='ar'>
-			<a-entity gltf-model="#skeleton" scale="0.5 0.5 0.5" position='0 0.5 0' material='opacity: 0.5;'></a-entity>
+			<a-entity gltf-model="#walking" scale="0.5 0.5 0.5" position='0 0.5 0' material='opacity: 0.5;'></a-entity>
 		</a-marker>
 		
 		<!-- add a simple camera -->
