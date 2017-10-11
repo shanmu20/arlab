@@ -2744,6 +2744,9 @@ AFRAME.registerComponent('arjsmarker', {
 		}else if(this.data.preset === 'earth'){
 			this.data.type = 'pattern'
 			this.data.patternUrl = 'https://raw.githubusercontent.com/shanmu20/arlab/master/pattern/earth.patt'
+		}else if(this.data.preset === 'battleship'){
+			this.data.type = 'pattern'
+			this.data.patternUrl = 'https://raw.githubusercontent.com/shanmu20/arlab/master/pattern/battleship.patt'
 		}
 		else {
 			console.assert( this.data.preset === '', 'illegal preset value '+this.data.preset)
