@@ -9,11 +9,13 @@
   </head>
   <body style='margin : 0px; overflow: hidden;'>
 	<a-scene>
-  <a-assets>
-    <a-asset-item id="tree-obj" src="model/Wolf_obj/Wolf_obj.obj"></a-asset-item>
-    <a-asset-item id="tree-mtl" src="model/Wolf_obj/Wolf_obj.mtl"></a-asset-item>
-  </a-assets>
-  <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl"></a-entity>
+		<a-assets>
+          <a-asset-item id="areoplane" src="models/CesiumAir/Cesium_Air.gltf"></a-asset-item>
+          <a-asset-item id="walking" src="models/walking/Cesium_Man.gltf"></a-asset-item>
+		  <a-asset-item id="earth-obj" src="models/earth/earth.obj"></a-asset-item>
+		  <a-asset-item id="earth-mtl" src="models/earth/earth.mtl"></a-asset-item>
+        </a-assets>
+  <a-entity obj-model="obj: #earth-obj; mtl: #earth-mtl"></a-entity>
 </a-scene>    
   </body>
 </html>
