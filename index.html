@@ -13,6 +13,11 @@
           <a-asset-item id="walking" src="models/walking/Cesium_Man.gltf"></a-asset-item>
 		  <a-asset-item id="battleship-obj" src="models/battleship/anim-girl-battleship.obj"></a-asset-item>
 		  <a-asset-item id="battleship-mtl" src="models/battleship/anim-girl-battleship.mtl"></a-asset-item>
+		  
+		  <a-asset-item id="house-obj" src="models/house-obj/house.obj"></a-asset-item>
+		  <a-asset-item id="house-mtl" src="models/house-obj/house.mtl"></a-asset-item>
+		  
+		  
         </a-assets>
         <!-- use your gltf model -->	
 
@@ -23,7 +28,7 @@
 		
 		<!-- handle circuit marker -->
 		<a-marker preset='tiger'>
-			<a-entity gltf-model="#walking" scale="0.5 0.5 0.5" position='0 0.5 0' material='opacity: 0.5;'></a-entity>
+			<a-entity obj-model="obj: #house-obj; mtl: #house-mtl" scale="0.1 0.1 0.1" position='0 0.5 0' material='opacity: 0.5;'></a-entity>
 		</a-marker>
 		<!-- handle circuit marker -->
 		<a-marker preset='earth'>
