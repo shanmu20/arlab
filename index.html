@@ -13,11 +13,14 @@
           <a-asset-item id="walking" src="models/walking/Cesium_Man.gltf"></a-asset-item>
 		  <a-asset-item id="battleship-obj" src="models/battleship/anim-girl-battleship.obj"></a-asset-item>
 		  <a-asset-item id="battleship-mtl" src="models/battleship/anim-girl-battleship.mtl"></a-asset-item>
+		  
+		  <a-asset-item id="motherboard-obj" src="models/motherboard/Motherboard.obj"></a-asset-item>
+		  <a-asset-item id="motherboard-mtl" src="models/motherboard/Motherboard.mtl"></a-asset-item>
         </a-assets>
         <!-- use your gltf model -->	
 
 		<a-marker preset='hiro'>
-			<a-entity gltf-model="#areoplane" scale="0.1 0.1 0.1" position='0 0.5 0' material='opacity: 0.5;'></a-entity>
+			<a-entity obj-model="obj: #motherboard-obj; mtl: #motherboard-mtl" scale="0.1 0.1 0.1" position='0 0.5 0' material='opacity: 0.5;'></a-entity>
 		</a-marker>
 		
 		<!-- handle circuit marker -->
