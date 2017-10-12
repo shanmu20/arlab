@@ -7,7 +7,7 @@
 <body style='margin : 0px; overflow: hidden;'>
 	<a-scene embedded arjs='sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 		
-		<!-- define your gltf asset -->
+		<!-- define 3d models as assets -->
         <a-assets>
           <a-asset-item id="areoplane" src="models/CesiumAir/Cesium_Air.gltf"></a-asset-item>
           <a-asset-item id="walking" src="models/walking/Cesium_Man.gltf"></a-asset-item>
@@ -17,21 +17,16 @@
 		  <a-asset-item id="motherboard-obj" src="models/motherboard/Motherboard.obj"></a-asset-item>
 		  <a-asset-item id="motherboard-mtl" src="models/motherboard/Motherboard.mtl"></a-asset-item>
         </a-assets>
-        <!-- use your gltf model -->	
-
+        <!-- asset declaration ends up here -->
+		
+		<!-- handle motherboard marker -->
 		<a-marker preset='motherboard'>
-			<a-entity obj-model="obj: #motherboard-obj; mtl: #motherboard-mtl" scale="0.1 0.1 0.1" position='0 0.5 0' material='opacity: 0.5;'></a-entity>
+			<a-entity obj-model="obj: #motherboard-obj; mtl: #motherboard-mtl" scale="0.01 0.01 0.01" position='0 0.2 0' material='opacity: 0.5;'></a-entity>
 		</a-marker>
 		
-		<!-- handle circuit marker -->
+		<!-- handle battleship marker -->
 		<a-marker preset='battleship'>
-		<a-entity obj-model="obj: #motherboard-obj; mtl: #motherboard-mtl" scale="0.01 0.01 0.01" position='0 0.2 0' material='opacity: 0.5;'></a-entity>
-			<!--<a-entity obj-model="obj: #battleship-obj; mtl: #battleship-mtl" scale="0.1 0.1 0.1" position='0 0.5 0' material='opacity: 0.5;'></a-entity>-->
-		</a-marker>
-		<!-- handle circuit marker -->
-		<a-marker preset='earth'>
-			<!--<a-entity gltf-model="#earth" scale="0.5 0.5 0.5" position='0 0.5 0' material='opacity: 0.5;'></a-entity>-->
-			 <a-entity obj-model="obj: #battleship-obj; mtl: #battleship-mtl" scale="0.1 0.1 0.1" position='0 0.5 0' material='opacity: 0.5;'></a-entity>
+			<a-entity obj-model="obj: #battleship-obj; mtl: #battleship-mtl" scale="0.3 0.3 0.3" position='0 0.5 0' material='opacity: 0.5;'></a-entity>
 		</a-marker>
 		
 		<!-- handle ar marker -->
@@ -39,7 +34,7 @@
 			<a-entity gltf-model="#areoplane" scale="0.2 0.2 0.2" position='0 0.5 0' material='opacity: 0.5;'></a-entity>
 		</a-marker>
 		
-		<!-- add a simple camera -->
+		<!-- add a camera entity to scene rendering -->
 		<a-entity camera></a-entity>
 	</a-scene>
 </body> 
