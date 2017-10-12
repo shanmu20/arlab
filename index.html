@@ -16,6 +16,9 @@
 		  
 		  <a-asset-item id="motherboard-obj" src="models/motherboard/Motherboard.obj"></a-asset-item>
 		  <a-asset-item id="motherboard-mtl" src="models/motherboard/Motherboard.mtl"></a-asset-item>
+		  
+          <audio id="battleaudio" crossorigin autoplay  src="models/battleship/audio.wav"></audio>
+
         </a-assets>
         <!-- asset declaration ends up here -->
 		
@@ -27,6 +30,7 @@
 		<!-- handle battleship marker -->
 		<a-marker preset='battleship'>
 			<a-entity obj-model="obj: #battleship-obj; mtl: #battleship-mtl" scale="0.5 0.5 0.5" position='0 0 0' material='opacity: 0.5;'></a-entity>
+			  <a-sound src="#battleaudiox"></a-sound>
 		</a-marker>
 		
 		<!-- handle ar marker -->
