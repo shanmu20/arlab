@@ -2743,6 +2743,9 @@ AFRAME.registerComponent('arjsmarker', {
 		}else if(this.data.preset === 'battleship'){
 			this.data.type = 'pattern'
 			this.data.patternUrl = 'https://raw.githubusercontent.com/shanmu20/arlab/master/pattern/ship.patt'
+		}else if(this.data.preset === 'motherboard'){
+			this.data.type = 'pattern'
+			this.data.patternUrl = 'https://raw.githubusercontent.com/shanmu20/arlab/master/pattern/motherboard.patt'
 		}
 		else {
 			console.assert( this.data.preset === '', 'illegal preset value '+this.data.preset)
