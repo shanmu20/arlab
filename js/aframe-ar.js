@@ -2735,9 +2735,9 @@ AFRAME.registerComponent('arjsmarker', {
 		}else if( this.data.preset === 'area' ){
 			this.data.type = 'area'
 			// fall through
-		}else if(this.data.preset === 'tiger'){
+		}else if(this.data.preset === 'aeroplane'){
 			this.data.type = 'pattern'
-			this.data.patternUrl = 'https://raw.githubusercontent.com/shanmu20/arlab/master/pattern/tiger.patt'
+			this.data.patternUrl = 'https://raw.githubusercontent.com/shanmu20/arlab/master/pattern/aeroplane.patt'
 		}else if(this.data.preset === 'earth'){
 			this.data.type = 'pattern'
 			this.data.patternUrl = 'https://raw.githubusercontent.com/shanmu20/arlab/master/pattern/earth.patt'
