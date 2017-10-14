@@ -1,5 +1,5 @@
 (function(){
-	var element = document.getElementsByTagName('a-marker a-entity');
+	var element = document.getElementById('battleship');
 	console.log(element);
 	console.log('ok');
 })();
