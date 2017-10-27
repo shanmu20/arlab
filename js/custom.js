@@ -7,9 +7,9 @@ $(document).ready(function(){
 		if (ev.type === 'pinchstart') {
 			var battle_ship = $('#battleship');
 			var scale_val = battle_ship.attr('scale');
-			var scale_x = scale_val.x * ev.scale;
-			var scale_y = scale_val.y * ev.scale;
-			var scale_z = scale_val.z * ev.scale;
+			var scale_x = scale_val.x + 0.1;
+			var scale_y = scale_val.y + 0.1;
+			var scale_z = scale_val.z + 0.1;
 			var final_val = scale_x + ' ' + scale_y + ' ' + scale_z;
 			battle_ship.attr('scale',final_val);
 		}
