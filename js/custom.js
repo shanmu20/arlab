@@ -1,5 +1,5 @@
 $(window).load(function(){
-	
+	window.alert('ready');
 	var element = document.getElementsByClassName('a-canvas')[0];
 	var hammertime = new Hammer(element);
 	hammertime.get('pinch').set({ enable: true });
