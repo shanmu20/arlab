@@ -3,16 +3,24 @@ $(document).ready(function(){
 	var hammertime = new Hammer(element);
 	hammertime.get('pinch').set({ enable: true });
 	hammertime.on('pinch', function(ev) {
-		console.log(ev);
-		if (ev.type === 'pinchstart') {
-			var battle_ship = $('#battleship');
-			var scale_val = battle_ship.attr('scale');
-			var scale_x = scale_val.x * ev.scale;
-			var scale_y = scale_val.y * ev.scale;
-			var scale_z = scale_val.z * ev.scale;
+		var battle_ship = $('#battleship');
+		var scale_val = battle_ship.attr('scale');
+		if (ev.type === 'pinch' && ev.additionalEvent == "pinchout") {
+			
+			var scale_x = scale_val.x + 0.05;
+			var scale_y = scale_val.y + 0.05;
+			var scale_z = scale_val.z + 0.05;
 			var final_val = scale_x + ' ' + scale_y + ' ' + scale_z;
-			battle_ship.attr('scale',final_val);
+			
+		}else if(ev.type === 'pinch'  && ev.additionalEvent == "pinchin"){
+			if(scale_val.x>=0.2){
+				var scale_x = scale_val.x - 0.05;
+				var scale_y = scale_val.y - 0.05;
+				var scale_z = scale_val.z - 0.05;
+				var final_val = scale_x + ' ' + scale_y + ' ' + scale_z;
+			}
 		}
+		battle_ship.attr('scale',final_val);
 	});
 
 });
