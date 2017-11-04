@@ -4,7 +4,8 @@ $(document).ready(function(){
 			var hammertime = new Hammer(element);
 			hammertime.get('pinch').set({ enable: true });
 			hammertime.on('pinch', function(ev) {
-				var entity = $('.asset-entity');
+				//var entity = $('.asset-entity');
+				var entity =  document.querySelectorAll('.asset-entity');
 				var entity_len = entity.length;
 				for (var i=0; i<entity_len; i++){
 					var scale_val =  entity[i].attr('scale');
@@ -22,7 +23,7 @@ $(document).ready(function(){
 							var final_val = scale_x + ' ' + scale_y + ' ' + scale_z;
 						}
 					}
-					entity[i].attr('scale',final_val);
+					entity[i].setAttribute('scale',final_val);
 				}
 				/*var battle_ship = $('#battleship');
 				var scale_val = battle_ship.attr('scale');
