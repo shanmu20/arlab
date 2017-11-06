@@ -14,43 +14,28 @@
 		
 		<!-- define 3d models as assets -->
         <a-assets>
-          <a-asset-item id="areoplane" src="models/CesiumAir/Cesium_Air.gltf"></a-asset-item>
-          
-		  <a-asset-item id="walking" src="models/walking/Cesium_Man.gltf"></a-asset-item>
 		  
-		  <a-asset-item id="battleship-obj" src="models/battleship/anim-girl-battleship.obj"></a-asset-item>
-		  <a-asset-item id="battleship-mtl" src="models/battleship/anim-girl-battleship.mtl"></a-asset-item>
+		  <a-asset-item id="heart-obj" src="models/heart/Heart.obj"></a-asset-item>
+		  <a-asset-item id="heart-mtl" src="models/heart/Heart.mtl"></a-asset-item>
 		  
-		  <a-asset-item id="motherboard-obj" src="models/motherboard/Motherboard.obj"></a-asset-item>
-		  <a-asset-item id="motherboard-mtl" src="models/motherboard/Motherboard.mtl"></a-asset-item>
-		  
-		  <a-asset-item id="house-obj" src="models/skull/skull.obj"></a-asset-item>
-		  <a-asset-item id="house-mtl" src="models/skull/skull.mtl"></a-asset-item>
-		  
-          <!--<audio id="battleaudio" crossorigin autoplay  src="models/battleship/audio.wav"></audio>-->
+		  <a-asset-item id="house-obj" src="models/house/house.obj"></a-asset-item>
+		  <a-asset-item id="house-mtl" src="models/house/house.mtl"></a-asset-item>
+		 
+
+		
 
         </a-assets>
         <!-- asset declaration ends up here -->
 		
-		<!-- handle motherboard marker -->
-		<a-marker preset='hiro'>
-			<a-entity class="asset-entity" id="house" obj-model="obj: #house-obj; mtl: #house-mtl" scale="0.005 0.005 0.005" position='0 0 0' material='opacity: 0.5;'></a-entity>
-		</a-marker>
-		
-		<!-- handle motherboard marker -->
-		<a-marker preset='motherboard'>
-			<a-entity class="asset-entity" id="mother_board" obj-model="obj: #motherboard-obj; mtl: #motherboard-mtl" scale="0.01 0.01 0.01" position='0 0 0' material='opacity: 0.5;'></a-entity>
-		</a-marker>
-		
 		<!-- handle battleship marker -->
 		<a-marker preset='battleship'> 
-			<a-entity class="asset-entity" id="battleship" obj-model="obj: #battleship-obj; mtl: #battleship-mtl" scale="0.5 0.5 0.5" position='0 0 0' material='opacity: 0.5;'></a-entity>
+			<a-entity class="asset-entity" id="battleship" obj-model="obj: #heart-obj; mtl: #heart-mtl" scale="0.5 0.5 0.5" position='0 0 0' material='opacity: 0.5;'></a-entity>
 			  <!--<a-sound src="#battleaudiox"></a-sound>-->
 		</a-marker>
 		
 		<!-- handle ar marker -->
 		<a-marker preset='aeroplane'>
-			<a-entity class="asset-entity" id="plane" gltf-model="#areoplane" scale="0.1 0.1 0.1" position='0 0 0' material='opacity: 0.5;'></a-entity>
+			<a-entity class="asset-entity" id="house" obj-model="obj: #house-obj; mtl: #house-mtl" scale="0.005 0.005 0.005" position='0 0 0' material='opacity: 0.5;'></a-entity>
 		</a-marker>
 		
 		<!-- add a camera entity to scene rendering -->
