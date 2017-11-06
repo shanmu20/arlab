@@ -15,14 +15,8 @@
 		<!-- define 3d models as assets -->
         <a-assets>
 		  
-		  <a-asset-item id="heart-obj" src="models/heart/Heart.obj"></a-asset-item>
-		  <a-asset-item id="heart-mtl" src="models/heart/Heart.mtl"></a-asset-item>
-		  
-		  <a-asset-item id="house-obj" src="models/house/house.obj"></a-asset-item>
-		  <a-asset-item id="house-mtl" src="models/house/house.mtl"></a-asset-item>
-		 
-
-		
+		  <a-asset-item id="heart-obj" src="models/skeleton/Group4.obj"></a-asset-item>
+		  <a-asset-item id="heart-mtl" src="models/skeleton/Group4.mtl"></a-asset-item>
 
         </a-assets>
         <!-- asset declaration ends up here -->
@@ -31,11 +25,6 @@
 		<a-marker preset='battleship'> 
 			<a-entity class="asset-entity" id="battleship" obj-model="obj: #heart-obj; mtl: #heart-mtl" scale="0.01 0.01 0.01" position='0 0 0' material='opacity: 0.5;'></a-entity>
 			  <!--<a-sound src="#battleaudiox"></a-sound>-->
-		</a-marker>
-		
-		<!-- handle ar marker -->
-		<a-marker preset='aeroplane'>
-			<a-entity class="asset-entity" id="house" obj-model="obj: #house-obj; mtl: #house-mtl" scale="0.005 0.005 0.005" position='0 0 0' material='opacity: 0.5;'></a-entity>
 		</a-marker>
 		
 		<!-- add a camera entity to scene rendering -->
