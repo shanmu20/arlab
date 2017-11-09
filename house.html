@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="js/aframe.min.js"></script>
+        <script src="js/aframe-ar.js"></script>
+		<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+        <script src="js/hammer.min.js"></script>
+    </head>
+<body style='margin : 0px; overflow: hidden;'>
+	<a-scene embedded arjs='sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+		
+		<!-- define 3d models as assets -->
+        <a-assets>
+		  
+		  
+		  <a-asset-item id="house-obj" src="models/house/house.obj"></a-asset-item>
+		  <a-asset-item id="house-mtl" src="models/house/house.mtl"></a-asset-item>
+		 
+
+		
+
+        </a-assets>
+        <!-- asset declaration ends up here -->
+		
+		
+		<!-- handle house marker -->
+		<a-marker preset='house'>
+			<a-entity class="asset-entity" id="house" obj-model="obj: #house-obj; mtl: #house-mtl" scale="0.005 0.005 0.005" position='0 0 0' material='opacity: 0.5;'></a-entity>
+		</a-marker>
+		
+		<!-- add a camera entity to scene rendering -->
+		<a-entity camera></a-entity>
+	</a-scene>
+</body> 
+  <script src="js/custom.js"></script>
+</html>
