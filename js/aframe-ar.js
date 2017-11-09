@@ -2751,7 +2751,7 @@ AFRAME.registerComponent('arjsmarker', {
 			this.data.patternUrl = 'https://raw.githubusercontent.com/shanmu20/arlab/master/pattern/dragon.patt'
 		}else if(this.data.preset === 'house'){
 			this.data.type = 'pattern'
-			this.data.patternUrl = 'https://raw.githubusercontent.com/shanmu20/arlab/master/pattern/dragon.patt'
+			this.data.patternUrl = 'https://raw.githubusercontent.com/shanmu20/arlab/master/pattern/house.patt'
 		}else if(this.data.preset === 'heart'){
 			this.data.type = 'pattern'
 			this.data.patternUrl = 'https://raw.githubusercontent.com/shanmu20/arlab/master/pattern/heart.patt'
